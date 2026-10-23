@@ -1,0 +1,62 @@
+# Genomic sequencing and reference data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.bigWig
+*.bw
+*.bed
+*.fa
+*.fasta
+*.fai
+*.gtf
+
+# Containers and installed environments
+*.sif
+*.img
+.conda/
+conda-env/
+venv/
+
+# Nextflow and Snakemake working files
+work/
+.nextflow/
+.nextflow.log*
+.snakemake/
+.cluster_config/
+singularity/
+
+# Scheduler output and routine logs
+*.out
+*.err
+*.log
+slurm-*
+
+# Large or temporary result directories
+raw_data/
+reference_data/
+full_results/
+TEMP/
+temp/
+tmp/
+
+# Pipeline-generated report directories
+report/
+pipeline_info/
+
+# Backups and editor files
+*.bak
+*.before_*
+*~
+.DS_Store
+
+# Credentials and secrets
+.env
+*.pem
+*.key
+credentials*
+secrets*
