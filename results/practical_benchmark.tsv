@@ -1,0 +1,4 @@
+pipeline	observed_runtime	runtime_seconds	runtime_basis	results_storage	primary_output	incomplete_attempts	recovery
+nf-core/tfactivity	17h 45m 54s	63954	Nextflow trace timestamps for the successful workflow run	3.9 GB	Interactive HTML report and tables	3	Nextflow reused completed processes with -resume
+TF-Prioritizer	20h 40m 42s	74442	Cumulative elapsed time for production and resume jobs 52896398, 52944221, 52995031, and 52996403	48 GB	Interactive HTML report and tables	2	Completed intermediate outputs were reused by resume runs
+diffTF	80h 38m 56s	290336	Cumulative elapsed time for timed-out job 53066784 and successful resume job 53118207	9.1 GB	TSV tables and PDF plots	3	Snakemake reused completed outputs after restart
