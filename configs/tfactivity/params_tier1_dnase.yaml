@@ -1,0 +1,8 @@
+input: __PROJECT_DIR__/samplesheets/tfactivity/dnase_peaks.csv
+counts: __PROJECT_DIR__/samplesheets/tfactivity/counts.csv
+counts_design: __PROJECT_DIR__/samplesheets/tfactivity/design.csv
+outdir: __SCRATCH_PROJECT_DIR__/results/tfactivity/tier1_dnase
+fasta: __SCRATCH_PROJECT_DIR__/references/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna
+gtf: __SCRATCH_PROJECT_DIR__/references/GENCODE_v29/gencode.v29.annotation.gtf
+taxon_id: 9606
+skip_sneep: true

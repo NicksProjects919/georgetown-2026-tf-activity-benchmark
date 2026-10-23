@@ -60,3 +60,7 @@ pipeline_info/
 *.key
 credentials*
 secrets*
+
+# Python temporary files
+__pycache__/
+*.pyc

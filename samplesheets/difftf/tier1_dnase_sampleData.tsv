@@ -1,0 +1,11 @@
+SampleID	Condition	bamReads	Peaks	conditionSummary
+K562_ENCFF264UFX	K562	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/bams_coordinate/K562/DNase/ENCFF264UFX.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/K562/DNase/ENCFF264UFX.bed	K562
+K562_ENCFF319IQX	K562	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/bams_coordinate/K562/DNase/ENCFF319IQX.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/K562/DNase/ENCFF319IQX.bed	K562
+K562_ENCFF361VGY	K562	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/bams_coordinate/K562/DNase/ENCFF361VGY.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/K562/DNase/ENCFF361VGY.bed	K562
+K562_ENCFF638QFS	K562	__SCRATCH_PROJECT_DIR__/inputs/diffTF/tier1_dnase/bams_single_end/K562/DNase/ENCFF638QFS.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/K562/DNase/ENCFF638QFS.bed	K562
+K562_ENCFF784DIM	K562	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/bams_coordinate/K562/DNase/ENCFF784DIM.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/K562/DNase/ENCFF784DIM.bed	K562
+MCF7_ENCFF073IFX	MCF7	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/bams_coordinate/MCF7/DNase/ENCFF073IFX.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/MCF7/DNase/ENCFF073IFX.bed	MCF7
+MCF7_ENCFF107HQA	MCF7	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/bams_coordinate/MCF7/DNase/ENCFF107HQA.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/MCF7/DNase/ENCFF107HQA.bed	MCF7
+MCF7_ENCFF250GOB	MCF7	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/bams_coordinate/MCF7/DNase/ENCFF250GOB.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/MCF7/DNase/ENCFF250GOB.bed	MCF7
+MCF7_ENCFF536CIK	MCF7	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/bams_coordinate/MCF7/DNase/ENCFF536CIK.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/MCF7/DNase/ENCFF536CIK.bed	MCF7
+MCF7_ENCFF886OJN	MCF7	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/bams_coordinate/MCF7/DNase/ENCFF886OJN.bam	__SCRATCH_PROJECT_DIR__/inputs/TF-Prioritizer/tier1_dnase/peaks/MCF7/DNase/ENCFF886OJN.bed	MCF7
