@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Arial, Helvetica, sans-serif" fill="#17202A">
+<rect width="1200" height="900" fill="#FFFFFF"/>
+<text x="600" y="50" text-anchor="middle" font-size="34" font-weight="bold">Overlap of Complete Final TF Lists</text>
+<circle cx="410" cy="360" r="210" fill="#69AEDD" fill-opacity="0.35" stroke="#2D83B7" stroke-width="4"/>
+<circle cx="790" cy="360" r="210" fill="#E889A6" fill-opacity="0.35" stroke="#CE4F78" stroke-width="4"/>
+<circle cx="600" cy="565" r="210" fill="#87C98A" fill-opacity="0.35" stroke="#40984B" stroke-width="4"/>
+<text x="300" y="103" text-anchor="middle" font-size="27" font-weight="bold">TF-Prioritizer</text>
+<text x="300" y="132" text-anchor="middle" font-size="18" font-weight="normal">Final prioritized TFs: n = 13</text>
+<text x="900" y="103" text-anchor="middle" font-size="27" font-weight="bold">nf-core/tfactivity</text>
+<text x="900" y="132" text-anchor="middle" font-size="18" font-weight="normal">Final prioritized TFs: n = 33</text>
+<text x="600" y="810" text-anchor="middle" font-size="27" font-weight="bold">diffTF</text>
+<text x="600" y="839" text-anchor="middle" font-size="18" font-weight="normal">Significant, QC-valid TF genes: n = 323</text>
+<text x="325" y="345" text-anchor="middle" font-size="34" font-weight="bold">11</text>
+<text x="325" y="372" text-anchor="middle" font-size="17" font-weight="normal">only</text>
+<text x="875" y="345" text-anchor="middle" font-size="34" font-weight="bold">15</text>
+<text x="875" y="372" text-anchor="middle" font-size="17" font-weight="normal">only</text>
+<text x="600" y="665" text-anchor="middle" font-size="34" font-weight="bold">303</text>
+<text x="600" y="692" text-anchor="middle" font-size="17" font-weight="normal">only</text>
+<text x="600" y="255" text-anchor="middle" font-size="34" font-weight="bold">0</text>
+<text x="600" y="282" text-anchor="middle" font-size="17" font-weight="normal">TFP + tfactivity</text>
+<text x="470" y="485" text-anchor="middle" font-size="34" font-weight="bold">2</text>
+<text x="470" y="512" text-anchor="middle" font-size="17" font-weight="normal">TFP + diffTF</text>
+<text x="730" y="485" text-anchor="middle" font-size="34" font-weight="bold">18</text>
+<text x="730" y="512" text-anchor="middle" font-size="17" font-weight="normal">tfactivity + diffTF</text>
+<text x="600" y="405" text-anchor="middle" font-size="34" font-weight="bold">0</text>
+<text x="600" y="432" text-anchor="middle" font-size="17" font-weight="normal">all three</text>
+<text x="600" y="882" text-anchor="middle" font-size="17" font-weight="normal">TF symbols were standardized before comparison.</text>
+</svg>

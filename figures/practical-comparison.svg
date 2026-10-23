@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" font-family="Arial, Helvetica, sans-serif" fill="#17202A">
+<rect width="1200" height="740" fill="#FFFFFF"/>
+<text x="600" y="50" text-anchor="middle" font-size="34" font-weight="bold">Observed Runtime and Results Storage</text>
+<text x="50" y="105" text-anchor="start" font-size="25" font-weight="bold">Observed runtime</text>
+<text x="260" y="162" text-anchor="end" font-size="20" font-weight="normal">nf-core/tfactivity</text>
+<rect x="285" y="133" width="154.2" height="42" rx="5" fill="#2D83B7"/>
+<text x="454.19307285352147" y="161" text-anchor="start" font-size="19" font-weight="bold">17h 45m 54s</text>
+<text x="260" y="230" text-anchor="end" font-size="20" font-weight="normal">TF-Prioritizer</text>
+<rect x="285" y="201" width="179.5" height="42" rx="5" fill="#CE4F78"/>
+<text x="479.47963738564977" y="229" text-anchor="start" font-size="19" font-weight="bold">20h 40m 42s</text>
+<text x="260" y="298" text-anchor="end" font-size="20" font-weight="normal">diffTF</text>
+<rect x="285" y="269" width="700.0" height="42" rx="5" fill="#40984B"/>
+<text x="1000.0" y="297" text-anchor="start" font-size="19" font-weight="bold">80h 38m 56s</text>
+<text x="50" y="395" text-anchor="start" font-size="25" font-weight="bold">Complete results-directory storage</text>
+<text x="260" y="452" text-anchor="end" font-size="20" font-weight="normal">nf-core/tfactivity</text>
+<rect x="285" y="423" width="56.9" height="42" rx="5" fill="#2D83B7"/>
+<text x="356.875" y="451" text-anchor="start" font-size="19" font-weight="bold">3.9 GB</text>
+<text x="260" y="520" text-anchor="end" font-size="20" font-weight="normal">TF-Prioritizer</text>
+<rect x="285" y="491" width="700.0" height="42" rx="5" fill="#CE4F78"/>
+<text x="1000.0" y="519" text-anchor="start" font-size="19" font-weight="bold">48 GB</text>
+<text x="260" y="588" text-anchor="end" font-size="20" font-weight="normal">diffTF</text>
+<rect x="285" y="559" width="132.7" height="42" rx="5" fill="#40984B"/>
+<text x="432.7083333333333" y="587" text-anchor="start" font-size="19" font-weight="bold">9.1 GB</text>
+<text x="600" y="680" text-anchor="middle" font-size="18" font-weight="normal">Recorded workflow observations, not a controlled speed test.</text>
+<text x="600" y="710" text-anchor="middle" font-size="18" font-weight="normal">See docs/PRACTICAL_COMPARISON.md for measurement details.</text>
+</svg>
