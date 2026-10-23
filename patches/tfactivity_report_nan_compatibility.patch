@@ -1,0 +1,12 @@
+diff --git a/modules/local/report/create/main.nf b/modules/local/report/create/main.nf
+index 777a6b1..5ba9f15 100644
+--- a/modules/local/report/create/main.nf
++++ b/modules/local/report/create/main.nf
+@@ -32,6 +32,7 @@ process REPORT_CREATE {
+     cp -L $gene_locations $assets_dir/gene_locations.json
+     cp -Lr $target_genes $assets_dir/target_genes
+     cp -Lr $transcription_factors $assets_dir/transcription_factors
++    find $assets_dir -type f -name "*.json" -exec sed -i -e "s/: NaN/: null/g" -e "s/: -Infinity/: null/g" -e "s/: Infinity/: null/g" {} +
+ 
+     # NPM does not work without a writable home directory
+     # Leads to problems with singularity/apptainer

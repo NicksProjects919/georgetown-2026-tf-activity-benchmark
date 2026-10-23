@@ -1,0 +1,105 @@
+diff --git a/src/R/analyzeTF.R b/src/R/analyzeTF.R
+index d2eac96..6a27b0f 100644
+--- a/src/R/analyzeTF.R
++++ b/src/R/analyzeTF.R
+@@ -642,11 +642,11 @@ TF_output.df = TF_output.df %>%
+ 
+ 
+ # TF_output.df = mutate_if(TF_output.df, is.numeric, as.character)
+-write_tsv(TF_output.df,     path = par.l$file_output_summaryAll)
++write_tsv(TF_output.df,     file = par.l$file_output_summaryAll)
+ 
+ # All numeric columns can be treated the same way
+ TF_outputInclPerm.df = mutate_if(TF_outputInclPerm.df, is.numeric, signif, 2)
+-write_tsv(TF_outputInclPerm.df, path = par.l$file_outputPerm_summaryAll, col_names = FALSE)
++write_tsv(TF_outputInclPerm.df, file = par.l$file_outputPerm_summaryAll, col_names = FALSE)
+ saveRDS(outputSummary.df,   file = par.l$file_output_summaryStats)
+ 
+ # saveRDS(res_DESeq.l, file = par.l$file_output_DESeq)
+diff --git a/src/R/binningTF.R b/src/R/binningTF.R
+index e700a77..9965de1 100644
+--- a/src/R/binningTF.R
++++ b/src/R/binningTF.R
+@@ -567,7 +567,7 @@ if (calculateVariance) {
+    
+ 
+ # Convert all numeric data types to character in order to prevent any scientific notation
+-write_tsv(output.global.TFs, path = par.l$file_output_summary, col_names = TRUE)
++write_tsv(output.global.TFs, file = par.l$file_output_summary, col_names = TRUE)
+ 
+ .printExecutionTime(start.time)
+ 
+diff --git a/src/R/checkParameterValidity.R b/src/R/checkParameterValidity.R
+index 0b9cbc8..4e6617f 100644
+--- a/src/R/checkParameterValidity.R
++++ b/src/R/checkParameterValidity.R
+@@ -358,7 +358,7 @@ if (file_peaks != "") {
+   if (par.l$verbose & nRowsFiltered  > 0) flog.info(paste0("Filtered ", nRowsFiltered, " non-unique positions out of ", rowsBefore, " from peaks."))
+   
+   peaks.df.transf = dplyr::mutate_if(peaks.df, is.numeric, as.character)
+-  write_tsv(peaks.df.transf, path = par.l$output_peaksClean, col_names = FALSE)  
++  write_tsv(peaks.df.transf, file = par.l$output_peaksClean, col_names = FALSE)  
+   
+ } else {
+   
+diff --git a/src/R/createConsensusPeaks.R b/src/R/createConsensusPeaks.R
+index 95c7743..100269b 100755
+--- a/src/R/createConsensusPeaks.R
++++ b/src/R/createConsensusPeaks.R
+@@ -124,7 +124,11 @@ if (nrow(sampleMetaData.df) == 0) {
+ }
+ ## DiffBind assigning. Convert to regular data frame first so DiffBind does not complain
+ dba <- dba(sampleSheet = as.data.frame(sampleMetaData.df))
+-consensus = dba.peakset(dba, minOverlap = minOverlap)
++consensus = dba.peakset(
++    dba,
++    peaks = seq_len(nrow(sampleMetaData.df)),
++    minOverlap = minOverlap
++)
+ 
+ # Get the consensus peaks (last row)
+ consensusPeaks.df = as.data.frame(consensus$peaks[[nrow(sampleMetaData.df) + 1]])
+@@ -146,7 +150,7 @@ consensusPeaks.df$annotation = paste0(consensusPeaks.df$chr, ":", consensusPeaks
+ consensusPeaks.df = consensusPeaks.df[,c("chr", "start", "end", "annotation", "pvalue")]
+ 
+ consensusPeaks.df = mutate_if(consensusPeaks.df, is.numeric, as.character)
+-write_tsv(consensusPeaks.df, path = par.l$file_output_consensusPeaks, col_names = FALSE)
++write_tsv(consensusPeaks.df, file = par.l$file_output_consensusPeaks, col_names = FALSE)
+ 
+ .printExecutionTime(start.time)
+ 
+diff --git a/src/R/diffPeaks.R b/src/R/diffPeaks.R
+index f83bdaa..b59069a 100755
+--- a/src/R/diffPeaks.R
++++ b/src/R/diffPeaks.R
+@@ -487,7 +487,7 @@ final.peaks.df = final.peaks.df %>%
+     mutate_at(c("pval", "pval_adj"), formatC, format = "g", digits = 3)
+ 
+ 
+-write_tsv(final.peaks.df, path = par.l$file_output_peaksTSV)
++write_tsv(final.peaks.df, file = par.l$file_output_peaksTSV)
+ 
+ #final.peaks.perm.df = mutate_if(final.peaks.perm.df, is.numeric, as.character)
+ #write_tsv(final.peaks.perm.df, path = par.l$file_output_peaksPermTSV)
+@@ -498,7 +498,7 @@ saveRDS(normFacs, par.l$file_output_normFacs)
+ 
+ # Deactivated, because column names starting with numbers will cause problems and crash. Since the names come from the sample file, this cannot be excluded.
+ #countsNorm.df = mutate_if(countsNorm.df, is.numeric, as.character)
+-write_tsv(countsNorm.df, path = par.l$file_output_normCounts)
++write_tsv(countsNorm.df, file = par.l$file_output_normCounts)
+ 
+ 
+ 
+diff --git a/src/R/summaryFinal.R b/src/R/summaryFinal.R
+index 55cd9a4..e427ff7 100644
+--- a/src/R/summaryFinal.R
++++ b/src/R/summaryFinal.R
+@@ -747,7 +747,7 @@ output.global.TFs.origReal = dplyr::select(output.global.TFs.origReal, -one_of("
+  #   mutate_at(c("pvalue_raw", "adj_pvalue"), formatC, format = "g", digits = 3)
+ 
+ output.global.TFs.origReal.transf = dplyr::mutate_if(output.global.TFs.origReal, is.numeric, as.character)
+-write_tsv(output.global.TFs.origReal.transf, path = par.l$file_output_summary, col_names = TRUE)
++write_tsv(output.global.TFs.origReal.transf, file = par.l$file_output_summary, col_names = TRUE)
+ saveRDS(allPlots.l, file = par.l$file_output_plots)
+ 
+ .printExecutionTime(start.time)
