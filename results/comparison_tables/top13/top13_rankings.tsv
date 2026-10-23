@@ -1,0 +1,40 @@
+pipeline	rank	tf_symbol	ranking_value	ranking_value_type	representative_motif	difftf_effect	difftf_direction	difftf_significant_FDR_0.05
+TF-Prioritizer	1	HOXB3	1.0	DCG score				
+TF-Prioritizer	2	MSANTD3	0.9230769230769231	DCG score				
+TF-Prioritizer	3	HOXC4	0.8461538461538461	DCG score				
+TF-Prioritizer	4	CTCFL	0.7692307692307693	DCG score				
+TF-Prioritizer	5	MNT	0.6923076923076923	DCG score				
+TF-Prioritizer	6	HOXA10	0.6153846153846154	DCG score				
+TF-Prioritizer	7	HOXB7	0.5384615384615384	DCG score				
+TF-Prioritizer	8	POU6F1	0.46153846153846156	DCG score				
+TF-Prioritizer	9	ZNF257	0.38461538461538464	DCG score				
+TF-Prioritizer	10	ZNF331	0.3076923076923077	DCG score				
+TF-Prioritizer	11	CTCF	0.23076923076923078	DCG score				
+TF-Prioritizer	12	RREB1	0.15384615384615385	DCG score				
+TF-Prioritizer	13	PLAG1	0.07692307692307693	DCG score				
+nf-core/tfactivity	1	NFATC3	1.0	DNase-seq DCG score	MA0625.3			
+nf-core/tfactivity	2	NFIX	0.9696969696969697	DNase-seq DCG score	MA0671.2			
+nf-core/tfactivity	3	KLF1	0.9393939393939394	DNase-seq DCG score	MA0493.3			
+nf-core/tfactivity	4	HIC2	0.9090909090909091	DNase-seq DCG score	MA0738.2			
+nf-core/tfactivity	5	VEZF1	0.8787878787878788	DNase-seq DCG score	MA1578.2			
+nf-core/tfactivity	6	ZNF263	0.8484848484848485	DNase-seq DCG score	MA0528.3			
+nf-core/tfactivity	7	SMAD2	0.8181818181818181	DNase-seq DCG score	MA1964.2			
+nf-core/tfactivity	8	ZEB1	0.7878787878787878	DNase-seq DCG score	MA0103.4			
+nf-core/tfactivity	9	ZNF213	0.7575757575757576	DNase-seq DCG score	MA2121.1			
+nf-core/tfactivity	10	ELF3	0.7272727272727273	DNase-seq DCG score	MA0640.3			
+nf-core/tfactivity	11	MXI1	0.696969696969697	DNase-seq DCG score	MA1108.3			
+nf-core/tfactivity	12	PLAGL2	0.6666666666666667	DNase-seq DCG score	MA1548.2			
+nf-core/tfactivity	13	ZNF692	0.6363636363636364	DNase-seq DCG score	MA1986.2			
+diffTF	1	TAL1	0.0092986723421506	adjusted p-value	TAL1.0.A	-5.23e-06	K562	Yes
+diffTF	2	GATA1	0.0092986723421506	adjusted p-value	GATA1.0.A	-5.21e-06	K562	Yes
+diffTF	3	GATA2	0.0092986723421506	adjusted p-value	GATA2.0.A	-5.05e-06	K562	Yes
+diffTF	4	GRHL2	0.0092986723421506	adjusted p-value	GRHL2.0.A	4.4e-06	MCF7	Yes
+diffTF	5	GATA4	0.0092986723421506	adjusted p-value	GATA4.0.A	-3.77e-06	K562	Yes
+diffTF	6	GRHL1	0.0092986723421506	adjusted p-value	GRHL1.0.D	3.49e-06	MCF7	Yes
+diffTF	7	GATA6	0.0092986723421506	adjusted p-value	GATA6.0.A	-3.27e-06	K562	Yes
+diffTF	8	GATA3	0.0092986723421506	adjusted p-value	GATA3.0.A	-3.19e-06	K562	Yes
+diffTF	9	FOXB1	0.0092986723421506	adjusted p-value	FOXB1.0.D	2.7e-06	MCF7	Yes
+diffTF	10	FOXA2	0.0092986723421506	adjusted p-value	FOXA2.0.A	2.51e-06	MCF7	Yes
+diffTF	11	FOXA1	0.0092986723421506	adjusted p-value	FOXA1.0.A	2.48e-06	MCF7	Yes
+diffTF	12	FOXM1	0.0092986723421506	adjusted p-value	FOXM1.0.A	2.4e-06	MCF7	Yes
+diffTF	13	FOXA3	0.0092986723421506	adjusted p-value	FOXA3.0.B	2.26e-06	MCF7	Yes

@@ -1,0 +1,8 @@
+region	count	tf_symbols
+TF-Prioritizer only	13	CTCF, CTCFL, HOXA10, HOXB3, HOXB7, HOXC4, MNT, MSANTD3, PLAG1, POU6F1, RREB1, ZNF257, ZNF331
+nf-core/tfactivity only	13	ELF3, HIC2, KLF1, MXI1, NFATC3, NFIX, PLAGL2, SMAD2, VEZF1, ZEB1, ZNF213, ZNF263, ZNF692
+diffTF only	13	FOXA1, FOXA2, FOXA3, FOXB1, FOXM1, GATA1, GATA2, GATA3, GATA4, GATA6, GRHL1, GRHL2, TAL1
+TF-Prioritizer + tfactivity only	0	
+TF-Prioritizer + diffTF only	0	
+tfactivity + diffTF only	0	
+All three	0	
